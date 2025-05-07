@@ -1,0 +1,35 @@
+{
+    "name": "omomohagiogu/wp-secureguard",
+    "description": "A lightweight WordPress security plugin that provides essential security features plugin.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Omomoh Agiogu",
+            "email": "omoh128@gmail.com",
+            "homepage": "https://omomohwebsite.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4" 
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1" 
+    },
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "inc/"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs .", 
+        "fix": "phpcbf ."  
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
